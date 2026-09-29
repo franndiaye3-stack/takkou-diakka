@@ -395,6 +395,42 @@ body {
 .slide--emerald {
   background: linear-gradient(160deg, #164A3D 0%, #0E2F27 55%, #0A241E 100%);
   color: var(--ivory);
+}/* ---------- Slide 1 : photo de fond ---------- */
+.slide--bg {
+  background-image:
+    /* Voile dégradé pour la lisibilité du texte */
+    linear-gradient(
+      160deg,
+      rgba(14, 47, 39, .72) 0%,
+      rgba(10, 36, 30, .78) 50%,
+      rgba(6, 25, 20, .88) 100%
+    ),
+    /* Photo de fond */
+    url('../assets/images/fond-slide1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+/* Sur écran plus grand : effet parallaxe léger */
+@media (min-width: 640px) {
+  .slide--bg {
+    background-attachment: fixed;
+  }
+}
+
+/* Sur la slide avec photo, on renforce les motifs décoratifs */
+.slide--bg .slide__pattern {
+  background-image:
+    radial-gradient(circle at 50% 40%, rgba(212, 175, 55, .12), transparent 65%),
+    repeating-linear-gradient(45deg, rgba(212, 175, 55, .05) 0 1px, transparent 1px 22px),
+    repeating-linear-gradient(-45deg, rgba(212, 175, 55, .05) 0 1px, transparent 1px 22px);
+}
+
+/* Petit halo doré pour faire ressortir le titre */
+.slide--bg .slide__title {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, .5), 0 0 40px rgba(212, 175, 55, .15);
 }
 
 .slide--ivory {
