@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <!-- ==================== SEO ==================== -->
+  <title>Takkou Diakka — François NDIAYE &amp; Aissatou Bouna BA</title>
+  <meta name="description" content="Invitation au mariage religieux de François NDIAYE et Aissatou Bouna BA — 10 octobre 2026 à 17h00, Parcelles Assainies, Dakar.">
+  <meta name="theme-color" content="#0E2F27">
+  <meta name="color-scheme" content="light">
+  <meta name="author" content="François NDIAYE &amp; Aissatou Bouna BA">
+
+  <!-- ==================== OPEN GRAPH ==================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Takkou Diakka — François NDIAYE &amp; Aissatou Bouna BA">
+  <meta property="og:description" content="Invitation au mariage religieux du 10 octobre 2026 à 17h00 — Parcelles Assainies, Dakar.">
+  <meta property="og:locale" content="fr_SN">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E2F27'/%3E%3Cg fill='none' stroke='%23D4AF37' stroke-width='1.4'%3E%3Crect x='10' y='10' width='12' height='12'/%3E%3Crect x='10' y='10' width='12' height='12' transform='rotate(45 16 16)'/%3E%3C/g%3E%3C/svg%3E">
+
+  <!-- ==================== FONTS ==================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================
+       SPLASH — ÉCRAN D'OUVERTURE
+       ========================================================== -->
+  <div class="splash" id="splash" role="dialog" aria-modal="true" aria-label="Ouverture de l'invitation">
+    <div class="splash__bg" aria-hidden="true"></div>
+
+    <div class="splash__inner">
+      <div class="splash__ornament anim anim-1" aria-hidden="true">
+        <svg viewBox="0 0 120 120" width="64" height="64" fill="none" stroke="currentColor" stroke-width=".8">
+          <circle cx="60" cy="60" r="52"/>
+          <circle cx="60" cy="60" r="40"/>
+          <rect x="34" y="34" width="52" height="52"/>
+          <rect x="34" y="34" width="52" height="52" transform="rotate(45 60 60)"/>
+          <circle cx="60" cy="60" r="6" fill="currentColor" stroke="none"/>
+        </svg>
+      </div>
+
+      <p class="splash__ar arabic anim anim-2">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+      <p class="splash__ar-fr anim anim-3">Au nom d’Allah, le Tout Miséricordieux, le Très Miséricordieux</p>
+
+      <div class="ornament ornament--wide anim anim-4" aria-hidden="true">
+        <span class="ornament__line"></span>
+        <svg class="ornament__icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.2">
+          <rect x="5.5" y="5.5" width="13" height="13"/>
+          <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+        </svg>
+        <span class="ornament__line"></span>
+      </div>
+
+      <p class="splash__kicker anim anim-5">Takkou Diakka</p>
+
+      <h1 class="splash__names anim anim-6">
+        <span class="splash__name">François NDIAYE</span>
+        <span class="splash__amp" aria-hidden="true">&amp;</span>
+        <span class="splash__name">Aissatou Bouna BA</span>
+      </h1>
+
+      <p class="splash__date anim anim-7">Samedi 10 octobre 2026 · Dakar</p>
+
+      <button type="button" class="btn btn--gold anim anim-8" id="enterBtn">
+        <span>Découvrir l’invitation</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M13 6l6 6-6 6"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       CONTENEUR PRINCIPAL — FORMAT SMARTPHONE
+       ========================================================== -->
+  <div class="phone">
+
+    <!-- ---------- Barre supérieure ---------- -->
+    <header class="topbar">
+      <span class="topbar__monogram">F <span class="amp">&amp;</span> A</span>
+      <span class="topbar__date">10 · 10 · 2026</span>
+    </header>
+
+    <main id="main">
+
+      <!-- ======================================================
+           CAROUSEL PRINCIPAL
+           ====================================================== -->
+      <section class="carousel" id="carousel" tabindex="0"
+               aria-roledescription="carrousel"
+               aria-label="Présentation de l’invitation">
+
+        <!-- Barre de progression dorée -->
+        <div class="carousel__progress" aria-hidden="true">
+          <span class="carousel__progress-bar" id="progressBar"></span>
+        </div>
+
+        <div class="carousel__viewport" id="viewport">
+          <div class="carousel__track" id="track">
+
+            <!-- ---------- Slide 1 ---------- -->
+            <article class="slide slide--emerald" role="group" aria-roledescription="slide" aria-label="1 sur 4">
+              <div class="slide__pattern" aria-hidden="true"></div>
+              <div class="slide__inner">
+                <p class="slide__eyebrow">
+                  <span class="slide__eyebrow-dot"></span>
+                  Invitation
+                  <span class="slide__eyebrow-dot"></span>
+                </p>
+                <h2 class="slide__title">Une union,<br>une intention,<br>une bénédiction</h2>
+
+                <div class="ornament" aria-hidden="true">
+                  <span class="ornament__line"></span>
+                  <svg class="ornament__icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <rect x="5.5" y="5.5" width="13" height="13"/>
+                    <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+                  </svg>
+                  <span class="ornament__line"></span>
+                </div>
+
+                <p class="slide__names">
+                  François NDIAYE
+                  <span class="slide__amp" aria-hidden="true">&amp;</span>
+                  Aissatou Bouna BA
+                </p>
+
+                <p class="slide__date-tag">10 Octobre 2026</p>
+              </div>
+            </article>
+
+            <!-- ---------- Slide 2 ---------- -->
+            <article class="slide slide--ivory" role="group" aria-roledescription="slide" aria-label="2 sur 4">
+              <div class="slide__pattern slide__pattern--dark" aria-hidden="true"></div>
+              <div class="slide__inner">
+                <p class="slide__eyebrow slide__eyebrow--dark">
+                  <span class="slide__eyebrow-dot"></span>
+                  Le Takkou Diakka
+                  <span class="slide__eyebrow-dot"></span>
+                </p>
+                <h2 class="slide__title slide__title--sm slide__title--dark">
+                  Un mariage simple, fondé sur la foi, la famille et la bénédiction d’Allah.
+                </h2>
+                <p class="slide__text slide__text--dark">
+                  « Nous avons choisi de célébrer notre union dans la simplicité, conformément à notre
+                  volonté de placer la foi, la famille et la bénédiction d’Allah au cœur de ce moment. »
+                </p>
+              </div>
+            </article>
+
+            <!-- ---------- Slide 3 ---------- -->
+            <article class="slide slide--emerald" role="group" aria-roledescription="slide" aria-label="3 sur 4">
+              <div class="slide__pattern" aria-hidden="true"></div>
+              <div class="slide__inner">
+                <p class="slide__eyebrow">
+                  <span class="slide__eyebrow-dot"></span>
+                  La cérémonie
+                  <span class="slide__eyebrow-dot"></span>
+                </p>
+                <h2 class="slide__title">Samedi<br>10 octobre 2026</h2>
+                <p class="slide__time">17h00</p>
+
+                <div class="ornament" aria-hidden="true">
+                  <span class="ornament__line"></span>
+                  <svg class="ornament__icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <rect x="5.5" y="5.5" width="13" height="13"/>
+                    <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+                  </svg>
+                  <span class="ornament__line"></span>
+                </div>
+
+                <p class="slide__place">
+                  Mosquée de l’Unité 12<br>
+                  Parcelles Assainies — Dakar
+                </p>
+              </div>
+            </article>
+
+            <!-- ---------- Slide 4 ---------- -->
+            <article class="slide slide--gold" role="group" aria-roledescription="slide" aria-label="4 sur 4">
+              <div class="slide__pattern slide__pattern--dark" aria-hidden="true"></div>
+              <div class="slide__inner">
+                <p class="slide__eyebrow slide__eyebrow--dark">
+                  <span class="slide__eyebrow-dot"></span>
+                  Message aux invités
+                  <span class="slide__eyebrow-dot"></span>
+                </p>
+                <h2 class="slide__title slide__title--sm slide__title--dark">
+                  Votre présence est notre plus beau cadeau.
+                </h2>
+                <p class="slide__text slide__text--dark">
+                  « Nous vous invitons à partager avec nous ce moment important de notre vie,
+                  dans la simplicité, la prière et la fraternité. »
+                </p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ---------- Navigation ---------- -->
+        <div class="carousel__nav">
+          <button type="button" class="carousel__arrow" id="prevBtn" aria-label="Slide précédente">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 5l-7 7 7 7"/>
+            </svg>
+          </button>
+
+          <div class="carousel__dots" id="dots" role="tablist" aria-label="Navigation des slides"></div>
+
+          <button type="button" class="carousel__arrow" id="nextBtn" aria-label="Slide suivante">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           COMPTE À REBOURS
+           ====================================================== -->
+      <section class="section section--dark" id="compte-a-rebours">
+        <div class="section__glow" aria-hidden="true"></div>
+        <div class="section__inner reveal">
+          <p class="section__eyebrow section__eyebrow--gold">Le grand jour approche</p>
+          <h2 class="section__title">Jusqu’au Takkou Diakka</h2>
+
+          <div class="countdown" id="countdown">
+            <div class="countdown__box">
+              <span class="countdown__num" id="cd-days">00</span>
+              <span class="countdown__label">Jours</span>
+            </div>
+            <div class="countdown__sep" aria-hidden="true">:</div>
+            <div class="countdown__box">
+              <span class="countdown__num" id="cd-hours">00</span>
+              <span class="countdown__label">Heures</span>
+            </div>
+            <div class="countdown__sep" aria-hidden="true">:</div>
+            <div class="countdown__box">
+              <span class="countdown__num" id="cd-minutes">00</span>
+              <span class="countdown__label">Min</span>
+            </div>
+            <div class="countdown__sep" aria-hidden="true">:</div>
+            <div class="countdown__box">
+              <span class="countdown__num" id="cd-seconds">00</span>
+              <span class="countdown__label">Sec</span>
+            </div>
+          </div>
+
+          <p class="countdown__done" id="countdownDone" hidden>
+            Le jour est arrivé. <span class="arabic">الحمد لله</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           LES FUTURS ÉPOUX
+           ====================================================== -->
+      <section class="section" id="epoux">
+        <div class="section__inner">
+          <p class="section__eyebrow reveal">Les futurs époux</p>
+          <h2 class="section__title reveal">Deux noms, une même intention</h2>
+
+          <div class="couple">
+            <figure class="couple__item reveal">
+              <div class="portrait">
+                <div class="portrait__frame" aria-hidden="true"></div>
+                <div class="portrait__ph" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width=".9">
+                    <rect x="5.5" y="5.5" width="13" height="13"/>
+                    <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+                  </svg>
+                </div>
+                <!-- Remplacer : assets/images/francois.jpg (portrait ~800×1000px) -->
+                <img class="portrait__img" src="assets/images/francois.jpg"
+                     alt="Portrait de François NDIAYE" loading="lazy" width="400" height="500">
+              </div>
+              <figcaption class="couple__name">François NDIAYE</figcaption>
+            </figure>
+
+            <div class="couple__amp reveal" aria-hidden="true">
+              <span class="couple__amp-line"></span>
+              <span class="couple__amp-char">&amp;</span>
+              <span class="couple__amp-line"></span>
+            </div>
+
+            <figure class="couple__item reveal">
+              <div class="portrait">
+                <div class="portrait__frame" aria-hidden="true"></div>
+                <div class="portrait__ph" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width=".9">
+                    <rect x="5.5" y="5.5" width="13" height="13"/>
+                    <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+                  </svg>
+                </div>
+                <!-- Remplacer : assets/images/aissatou.jpg (portrait ~800×1000px) -->
+                <img class="portrait__img" src="assets/images/aissatou.jpg"
+                     alt="Portrait de Aissatou Bouna BA" loading="lazy" width="400" height="500">
+              </div>
+              <figcaption class="couple__name">Aissatou Bouna BA</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           CÉRÉMONIE
+           ====================================================== -->
+      <section class="section section--soft" id="ceremonie">
+        <div class="section__inner">
+          <p class="section__eyebrow reveal">Cérémonie religieuse</p>
+          <h2 class="section__title reveal">Le jour du Takkou Diakka</h2>
+
+          <div class="card reveal">
+            <div class="card__corner card__corner--tl" aria-hidden="true"></div>
+            <div class="card__corner card__corner--tr" aria-hidden="true"></div>
+            <div class="card__corner card__corner--bl" aria-hidden="true"></div>
+            <div class="card__corner card__corner--br" aria-hidden="true"></div>
+
+            <ul class="info">
+              <li class="info__item">
+                <span class="info__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M3 10h18M8 3v4M16 3v4"/>
+                  </svg>
+                </span>
+                <span class="info__body">
+                  <span class="info__label">Date</span>
+                  <span class="info__value">Samedi 10 octobre 2026</span>
+                </span>
+              </li>
+
+              <li class="info__item">
+                <span class="info__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 7v5l3 2"/>
+                  </svg>
+                </span>
+                <span class="info__body">
+                  <span class="info__label">Heure</span>
+                  <span class="info__value">17h00</span>
+                </span>
+              </li>
+
+              <li class="info__item">
+                <span class="info__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/>
+                    <circle cx="12" cy="10" r="2.6"/>
+                  </svg>
+                </span>
+                <span class="info__body">
+                  <span class="info__label">Lieu</span>
+                  <span class="info__value">Mosquée de l’Unité 12<br>Parcelles Assainies — Dakar</span>
+                </span>
+              </li>
+            </ul>
+
+            <a class="btn btn--dark btn--block"
+               href="https://www.google.com/maps/search/?api=1&amp;query=Mosqu%C3%A9e%20de%20l%27Unit%C3%A9%2012%2C%20Parcelles%20Assainies%2C%20Dakar"
+               target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/>
+                <circle cx="12" cy="10" r="2.6"/>
+              </svg>
+              <span>Voir l’itinéraire</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           ESPRIT DU MARIAGE
+           ====================================================== -->
+      <section class="section section--ivory" id="simplicite">
+        <div class="section__inner reveal">
+          <p class="section__eyebrow">Esprit du mariage</p>
+          <h2 class="section__title">Dans la simplicité</h2>
+
+          <div class="ornament" aria-hidden="true">
+            <span class="ornament__line"></span>
+            <svg class="ornament__icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="5.5" y="5.5" width="13" height="13"/>
+              <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+            </svg>
+            <span class="ornament__line"></span>
+          </div>
+
+          <p class="section__text">
+            « Nous avons fait le choix d’un mariage simple et religieux, sans grande fête ni dépenses
+            excessives. Pour nous, l’essentiel est de réunir nos familles, de recevoir leurs bénédictions
+            et de commencer cette nouvelle étape dans la foi et la sérénité. »
+          </p>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           INVOCATION
+           ====================================================== -->
+      <section class="section section--dark" id="invocation">
+        <div class="section__glow section__glow--top" aria-hidden="true"></div>
+        <div class="section__inner reveal">
+          <p class="arabic arabic--lg">اللَّهُمَّ بَارِكْ لَنَا وَبَارِكْ عَلَيْنَا وَاجْمَعْ بَيْنَنَا فِي خَيْرٍ</p>
+
+          <div class="ornament" aria-hidden="true">
+            <span class="ornament__line"></span>
+            <svg class="ornament__icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="5.5" y="5.5" width="13" height="13"/>
+              <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+            </svg>
+            <span class="ornament__line"></span>
+          </div>
+
+          <p class="section__text">
+            « Ô Allah, bénis-nous, accorde Ta bénédiction sur notre union et réunis-nous dans le bien. »
+          </p>
+        </div>
+      </section>
+
+      <!-- ======================================================
+           PARTAGE
+           ====================================================== -->
+      <section class="section section--soft" id="partage">
+        <div class="section__inner reveal">
+          <p class="section__eyebrow">Partage</p>
+          <h2 class="section__title">Faites circuler l’invitation</h2>
+          <p class="section__text section__text--sm">
+            Vous pouvez transmettre cette invitation à vos proches.
+          </p>
+
+          <div class="actions">
+            <button type="button" class="btn btn--gold btn--block" id="shareBtn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="18" cy="5" r="3"/>
+                <circle cx="6" cy="12" r="3"/>
+                <circle cx="18" cy="19" r="3"/>
+                <path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/>
+              </svg>
+              <span>Partager l’invitation</span>
+            </button>
+            <button type="button" class="btn btn--outline btn--block" id="copyBtn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="12" height="12" rx="2"/>
+                <path d="M5 15V5a2 2 0 0 1 2-2h10"/>
+              </svg>
+              <span>Copier le lien</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ======================================================
+         FOOTER
+         ====================================================== -->
+    <footer class="footer">
+      <div class="footer__ornament" aria-hidden="true">
+        <svg viewBox="0 0 60 60" width="28" height="28" fill="none" stroke="currentColor" stroke-width=".8">
+          <rect x="14" y="14" width="32" height="32"/>
+          <rect x="14" y="14" width="32" height="32" transform="rotate(45 30 30)"/>
+        </svg>
+      </div>
+
+      <p class="footer__names">
+        François NDIAYE <span class="amp">&amp;</span> Aissatou Bouna BA
+      </p>
+      <p class="footer__date">10 octobre 2026</p>
+
+      <div class="ornament ornament--wide" aria-hidden="true">
+        <span class="ornament__line"></span>
+        <svg class="ornament__icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2">
+          <rect x="5.5" y="5.5" width="13" height="13"/>
+          <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+        </svg>
+        <span class="ornament__line"></span>
+      </div>
+
+      <p class="footer__dua arabic">اللهم بارك لنا</p>
+      <p class="footer__thanks">Merci de partager ce moment avec nous.</p>
+    </footer>
+
+  </div><!-- /.phone -->
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
