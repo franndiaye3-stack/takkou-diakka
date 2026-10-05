@@ -18,9 +18,9 @@
   <meta property="og:locale" content="fr_SN">
   <meta property="og:image" content="https://franndiaye3-stack.github.io/takkou-diakka/assets/images/og-image.jpg">
   <meta property="og:image:secure_url" content="https://franndiaye3-stack.github.io/takkou-diakka/assets/images/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon SVG inline -->
@@ -237,8 +237,23 @@
       <section class="section section--dark" id="compte-a-rebours">
         <div class="section__glow" aria-hidden="true"></div>
         <div class="section__inner reveal">
+
+          <p class="verse">هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ</p>
+          <p class="verse-translation">
+            « Elles sont un vêtement pour vous, et vous êtes un vêtement pour elles. »
+          </p>
+
+          <div class="ornament" aria-hidden="true">
+            <span class="ornament__line"></span>
+            <svg class="ornament__icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="5.5" y="5.5" width="13" height="13"/>
+              <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+            </svg>
+            <span class="ornament__line"></span>
+          </div>
+
           <p class="section__eyebrow section__eyebrow--gold">Le grand jour approche</p>
-          <h2 class="section__title">Jusqu’au Takkou Diakka</h2>
+          <h2 class="section__title">Takkou Diakka</h2>
 
           <div class="countdown" id="countdown">
             <div class="countdown__box">
@@ -265,13 +280,45 @@
           <p class="countdown__done" id="countdownDone" hidden>
             Le jour est arrivé. <span class="arabic">الحمد لله</span>
           </p>
+
+        </div>
+      </section>
+
+      <!-- ======================================================
+           PROVERBE D'AMOUR
+           ====================================================== -->
+      <section class="section section--proverb">
+        <div class="section__inner reveal">
+          <div class="ornament" aria-hidden="true">
+            <span class="ornament__line"></span>
+            <svg class="ornament__icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="5.5" y="5.5" width="13" height="13"/>
+              <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+            </svg>
+            <span class="ornament__line"></span>
+          </div>
+
+          <p class="proverb">
+            « L’amour fait que deux personnes<br>
+            deviennent comme un seul cœur. »
+          </p>
+
+          <div class="ornament" aria-hidden="true">
+            <span class="ornament__line"></span>
+            <svg class="ornament__icon" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="5.5" y="5.5" width="13" height="13"/>
+              <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
+            </svg>
+            <span class="ornament__line"></span>
+          </div>
         </div>
       </section>
 
       <!-- ======================================================
            LES FUTURS ÉPOUX
            ====================================================== -->
-      <section class="section" id="epoux">
+      <section class="section section--gold-couple" id="epoux">
+        <div class="couple-stars" id="coupleStars" aria-hidden="true"></div>
         <div class="section__inner">
           <p class="section__eyebrow reveal">Les futurs époux</p>
           <h2 class="section__title reveal">Deux noms, une même intention</h2>
@@ -286,7 +333,6 @@
                     <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
                   </svg>
                 </div>
-                <!-- Remplacer : assets/images/francois.jpg (portrait ~800×1000px) -->
                 <img class="portrait__img" src="assets/images/francois.jpg"
                      alt="Portrait de François NDIAYE" loading="lazy" width="400" height="500">
               </div>
@@ -308,7 +354,6 @@
                     <rect x="5.5" y="5.5" width="13" height="13" transform="rotate(45 12 12)"/>
                   </svg>
                 </div>
-                <!-- Remplacer : assets/images/aissatou.jpg (portrait ~800×1000px) -->
                 <img class="portrait__img" src="assets/images/aissatou.jpg"
                      alt="Portrait de Aissatou Bouna BA" loading="lazy" width="400" height="500">
               </div>
@@ -373,15 +418,45 @@
               </li>
             </ul>
 
-            <a class="btn btn--dark btn--block"
-               href="https://www.google.com/maps/search/?api=1&amp;query=Mosqu%C3%A9e%20de%20l%27Unit%C3%A9%2012%2C%20Parcelles%20Assainies%2C%20Dakar"
-               target="_blank" rel="noopener noreferrer">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/>
-                <circle cx="12" cy="10" r="2.6"/>
-              </svg>
-              <span>Voir l’itinéraire</span>
-            </a>
+                        <!-- ---------- Carte de localisation ---------- -->
+            <div class="map-wrap">
+              <iframe
+                class="map-frame"
+                src="https://www.google.com/maps?q=14.7609335,-17.4384722&hl=fr&z=18&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Carte de localisation — Parcelles Assainies Unité 12"
+                allowfullscreen>
+              </iframe>
+              <div class="map-overlay" aria-hidden="true"></div>
+              <div class="map-pin" aria-hidden="true">
+                <span class="map-pin__dot"></span>
+                <span class="map-pin__pulse"></span>
+              </div>
+            </div>
+
+            <!-- ---------- Boutons itinéraire ---------- -->
+            <div class="map-actions">
+              <a class="btn btn--gold btn--block"
+                 href="https://www.google.com/maps/dir/?api=1&destination=14.7609335,-17.4384722"
+                 target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/>
+                  <circle cx="12" cy="10" r="2.6"/>
+                </svg>
+                <span>Ouvrir l'itinéraire</span>
+              </a>
+
+              <a class="btn btn--dark btn--block"
+                 href="https://www.google.com/maps/place/Senelec+des+Parcelles+Assainies+unite+12/@14.7611396,-17.4378283,20a/data=!4m6!3m5!1s0xec10d1b815e7169:0xd4ed5f506656f133!8m2!3d14.7609335!4d-17.4384722"
+                 target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="16" rx="2"/>
+                  <path d="M3 10h18M8 3v4M16 3v4"/>
+                </svg>
+                <span>Voir en détail</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -432,6 +507,232 @@
             « Ô Allah, bénis-nous, accorde Ta bénédiction sur notre union et réunis-nous dans le bien. »
           </p>
         </div>
+      </section>
+
+      <!-- ======================================================
+           SHOOTING AVANT MARIAGE — Galerie horizontale premium
+           ====================================================== -->
+            <!-- ======================================================
+           SHOOTING AVANT MARIAGE — Galerie horizontale
+           ====================================================== -->
+      <style>
+        /* --- GALERIE HORIZONTALE - Styles directs --- */
+        .gs-section {
+          background: linear-gradient(160deg, #FCFAF5 0%, #F1EAD8 100%);
+          padding: 60px 0 40px;
+          overflow: hidden;
+        }
+        .gs-head {
+          text-align: center;
+          padding: 0 24px;
+          margin-bottom: 28px;
+        }
+        .gs-eyebrow {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 11px;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          color: #A8871B;
+          margin: 0 0 14px;
+        }
+        .gs-title {
+          font-family: 'Cormorant Garamond', serif;
+          font-weight: 500;
+          font-size: 30px;
+          color: #0E2F27;
+          margin: 0 0 16px;
+          letter-spacing: 0.5px;
+        }
+        .gs-line {
+          width: 60px;
+          height: 1px;
+          margin: 0 auto 16px;
+          background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+        }
+        .gs-sub {
+          font-family: 'Cormorant Garamond', serif;
+          font-style: italic;
+          font-size: 16px;
+          line-height: 1.6;
+          color: #5B6661;
+          margin: 0;
+          padding: 0 20px;
+        }
+
+        /* --- SCROLLER HORIZONTAL --- */
+        .gs-scroll {
+          display: flex !important;
+          flex-direction: row !important;
+          flex-wrap: nowrap !important;
+          overflow-x: auto !important;
+          overflow-y: hidden !important;
+          gap: 16px !important;
+          padding: 20px 40px 40px !important;
+          scroll-snap-type: x mandatory !important;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+        }
+        .gs-scroll::-webkit-scrollbar {
+          display: none !important;
+        }
+
+        /* --- CARTE PHOTO --- */
+        .gs-scroll .gs-item {
+          flex: 0 0 auto !important;
+          width: 260px !important;
+          height: 380px !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          border-radius: 14px !important;
+          overflow: hidden !important;
+          position: relative;
+          scroll-snap-align: center !important;
+          scroll-snap-stop: always;
+          background: #0E2F27;
+          box-shadow:
+            0 10px 30px rgba(10, 36, 30, 0.28),
+            0 0 0 1px rgba(212, 175, 55, 0.35);
+          transition: transform 0.5s cubic-bezier(0.22, 0.8, 0.28, 1),
+                      box-shadow 0.5s ease;
+        }
+
+        .gs-scroll .gs-item:hover,
+        .gs-scroll .gs-item:active {
+          transform: translateY(-6px) scale(1.03);
+          box-shadow:
+            0 20px 50px rgba(10, 36, 30, 0.4),
+            0 0 0 2px rgba(212, 175, 55, 0.9),
+            0 0 40px rgba(212, 175, 55, 0.35);
+        }
+
+        /* Cadre doré intérieur */
+        .gs-scroll .gs-item::after {
+          content: "";
+          position: absolute;
+          inset: 10px;
+          border: 1px solid rgba(212, 175, 55, 0.5);
+          border-radius: 6px;
+          pointer-events: none;
+          z-index: 2;
+          transition: border-color 0.4s ease;
+        }
+        .gs-scroll .gs-item:hover::after {
+          border-color: rgba(212, 175, 55, 1);
+        }
+
+        /* Image */
+        .gs-scroll .gs-item img {
+          display: block !important;
+          width: 100% !important;
+          height: 100% !important;
+          max-width: none !important;
+          object-fit: cover !important;
+          transition: transform 0.8s cubic-bezier(0.22, 0.8, 0.28, 1);
+        }
+        .gs-scroll .gs-item:hover img {
+          transform: scale(1.08);
+        }
+
+        /* Numéro */
+        .gs-scroll .gs-num {
+          position: absolute;
+          bottom: 14px;
+          left: 14px;
+          z-index: 3;
+          font-family: 'Cormorant Garamond', serif;
+          font-size: 13px;
+          letter-spacing: 3px;
+          color: #E0C25C;
+          padding: 5px 14px;
+          background: rgba(10, 36, 30, 0.85);
+          border: 1px solid rgba(212, 175, 55, 0.6);
+          border-radius: 999px;
+          backdrop-filter: blur(6px);
+        }
+
+        /* Animation d'apparition */
+        @keyframes gsFadeUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .gs-scroll .gs-item {
+          animation: gsFadeUp 0.7s cubic-bezier(0.22, 0.8, 0.28, 1) backwards;
+        }
+        .gs-scroll .gs-item:nth-child(1) { animation-delay: 0.05s; }
+        .gs-scroll .gs-item:nth-child(2) { animation-delay: 0.15s; }
+        .gs-scroll .gs-item:nth-child(3) { animation-delay: 0.25s; }
+        .gs-scroll .gs-item:nth-child(4) { animation-delay: 0.35s; }
+        .gs-scroll .gs-item:nth-child(5) { animation-delay: 0.45s; }
+        .gs-scroll .gs-item:nth-child(6) { animation-delay: 0.55s; }
+
+        /* Hint */
+        .gs-hint {
+          text-align: center;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 10px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          color: #5B6661;
+          margin: 0 0 10px;
+          opacity: 0.7;
+        }
+        .gs-hint span {
+          color: #D4AF37;
+          margin: 0 6px;
+        }
+
+        /* Responsive */
+        @media (min-width: 480px) {
+          .gs-scroll .gs-item {
+            width: 290px !important;
+            height: 420px !important;
+          }
+        }
+      </style>
+
+      <section class="gs-section" id="shooting">
+        <div class="gs-head">
+          <p class="gs-eyebrow">Souvenirs</p>
+          <h2 class="gs-title">Nos instants précieux</h2>
+          <div class="gs-line"></div>
+          <p class="gs-sub">« Quelques instants de notre chemin vers cette belle union. »</p>
+        </div>
+
+        <div class="gs-scroll">
+          <!-- 📸 Remplace par tes photos -->
+          <figure class="gs-item">
+            <img src="assets/images/shooting/shooting-1.jpg" alt="Shooting 1" loading="lazy">
+            <span class="gs-num">01</span>
+          </figure>
+
+          <figure class="gs-item">
+            <img src="assets/images/shooting/shooting-2.jpg" alt="Shooting 2" loading="lazy">
+            <span class="gs-num">02</span>
+          </figure>
+
+          <figure class="gs-item">
+            <img src="assets/images/shooting/shooting-3.jpg" alt="Shooting 3" loading="lazy">
+            <span class="gs-num">03</span>
+          </figure>
+
+          <figure class="gs-item">
+            <img src="assets/images/shooting/shooting-4.jpg" alt="Shooting 4" loading="lazy">
+            <span class="gs-num">04</span>
+          </figure>
+
+          <figure class="gs-item">
+            <img src="assets/images/shooting/shooting-5.jpg" alt="Shooting 5" loading="lazy">
+            <span class="gs-num">05</span>
+          </figure>
+
+          <figure class="gs-item">
+            <img src="assets/images/shooting/shooting-6.jpg" alt="Shooting 6" loading="lazy">
+            <span class="gs-num">06</span>
+          </figure>
+        </div>
+
+        <p class="gs-hint"><span>←</span> Glissez <span>→</span></p>
       </section>
 
       <!-- ======================================================
@@ -499,9 +800,181 @@
 
   </div><!-- /.phone -->
 
-  <!-- Toast -->
+  <!-- ==========================================================
+       DÉCORS ANIMÉS — Étoiles filantes & Cœurs dorés
+       ========================================================== -->
+  <div class="sky-decor" id="skyDecor" aria-hidden="true"></div>
+
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="js/script.js"></script>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---------- Étoiles filantes & cœurs dorés ---------- */
+      const decor = document.getElementById('skyDecor');
+      if (decor && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+
+        function spawnShootingStar() {
+          const star = document.createElement('div');
+          star.className = 'shooting-star';
+          star.style.left = (40 + Math.random() * 60) + '%';
+          star.style.top = (-10 + Math.random() * 35) + '%';
+          const duration = 1.6 + Math.random() * 1.2;
+          star.style.animationDuration = duration + 's';
+          decor.appendChild(star);
+          setTimeout(() => star.remove(), duration * 1000 + 300);
+        }
+
+        function loopShootingStar() {
+          spawnShootingStar();
+          setTimeout(loopShootingStar, 2800 + Math.random() * 3200);
+        }
+
+        function spawnHeart() {
+          const heart = document.createElement('div');
+          heart.className = 'gold-heart';
+          heart.style.left = (6 + Math.random() * 88) + '%';
+          heart.style.fontSize = (12 + Math.random() * 10) + 'px';
+          heart.style.setProperty('--drift', (25 + Math.random() * 45) + 'px');
+          const duration = 6 + Math.random() * 3;
+          heart.style.animationDuration = duration + 's';
+          decor.appendChild(heart);
+          setTimeout(() => heart.remove(), duration * 1000 + 300);
+        }
+
+        function loopHeart() {
+          spawnHeart();
+          setTimeout(loopHeart, 1600 + Math.random() * 2000);
+        }
+
+        setTimeout(loopShootingStar, 900);
+        setTimeout(loopHeart, 500);
+      }
+
+      /* ---------- Étoiles filantes — Section couple ---------- */
+      const coupleStars = document.getElementById('coupleStars');
+      const coupleSection = document.getElementById('epoux');
+
+      if (coupleStars && coupleSection && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+
+        function spawnCoupleStar() {
+          const star = document.createElement('div');
+          star.className = 'couple-star';
+          star.style.left = (30 + Math.random() * 60) + '%';
+          star.style.top = (5 + Math.random() * 25) + '%';
+          const duration = 1.8 + Math.random() * 1.2;
+          star.style.animationDuration = duration + 's';
+          coupleStars.appendChild(star);
+          setTimeout(() => star.remove(), duration * 1000 + 300);
+        }
+
+        function loopCoupleStar() {
+          spawnCoupleStar();
+          if (Math.random() > 0.6) {
+            setTimeout(spawnCoupleStar, 300 + Math.random() * 400);
+          }
+          setTimeout(loopCoupleStar, 1500 + Math.random() * 2500);
+        }
+
+        let starsStarted = false;
+        const starObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !starsStarted) {
+              starsStarted = true;
+              setTimeout(spawnCoupleStar, 400);
+              setTimeout(loopCoupleStar, 1400);
+            }
+          });
+        }, { threshold: 0.15 });
+
+        starObserver.observe(coupleSection);
+      }
+
+      /* ---------- Galerie shooting — Lightbox ---------- */
+      const showcaseCards = document.querySelectorAll('.showcase__card');
+      if (showcaseCards.length > 0) {
+        const lightbox = document.createElement('div');
+        lightbox.className = 'lightbox';
+        lightbox.setAttribute('role', 'dialog');
+        lightbox.setAttribute('aria-modal', 'true');
+        lightbox.innerHTML =
+          '<button class="lightbox__close" aria-label="Fermer"></button>' +
+          '<button class="lightbox__nav lightbox__nav--prev" aria-label="Photo précédente"></button>' +
+          '<button class="lightbox__nav lightbox__nav--next" aria-label="Photo suivante"></button>' +
+          '<img class="lightbox__img" alt="">' +
+          '<div class="lightbox__counter"></div>';
+        document.body.appendChild(lightbox);
+
+        const lbImg = lightbox.querySelector('.lightbox__img');
+        const lbClose = lightbox.querySelector('.lightbox__close');
+        const lbPrev = lightbox.querySelector('.lightbox__nav--prev');
+        const lbNext = lightbox.querySelector('.lightbox__nav--next');
+        const lbCounter = lightbox.querySelector('.lightbox__counter');
+        const total = showcaseCards.length;
+        let currentIdx = 0;
+
+        function openLightbox(idx) {
+          currentIdx = idx;
+          const img = showcaseCards[idx].querySelector('img');
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          lbCounter.textContent = (idx + 1) + ' / ' + total;
+          lightbox.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+          lightbox.classList.remove('is-open');
+          document.body.style.overflow = '';
+        }
+
+        function nextPhoto() {
+          currentIdx = (currentIdx + 1) % total;
+          openLightbox(currentIdx);
+        }
+
+        function prevPhoto() {
+          currentIdx = (currentIdx - 1 + total) % total;
+          openLightbox(currentIdx);
+        }
+
+        showcaseCards.forEach((card, idx) => {
+          card.addEventListener('click', () => openLightbox(idx));
+        });
+
+        lbClose.addEventListener('click', closeLightbox);
+        lbNext.addEventListener('click', (e) => { e.stopPropagation(); nextPhoto(); });
+        lbPrev.addEventListener('click', (e) => { e.stopPropagation(); prevPhoto(); });
+
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (!lightbox.classList.contains('is-open')) return;
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowRight') nextPhoto();
+          if (e.key === 'ArrowLeft') prevPhoto();
+        });
+
+        let lbTouchStart = 0;
+        lightbox.addEventListener('touchstart', (e) => {
+          lbTouchStart = e.touches[0].clientX;
+        }, { passive: true });
+
+        lightbox.addEventListener('touchend', (e) => {
+          const dx = e.changedTouches[0].clientX - lbTouchStart;
+          if (Math.abs(dx) > 50) {
+            if (dx < 0) nextPhoto();
+            else prevPhoto();
+          }
+        }, { passive: true });
+      }
+    })();
+  </script>
+
 </body>
 </html>
