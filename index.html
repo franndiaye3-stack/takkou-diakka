@@ -13,17 +13,20 @@
 
   <!-- ==================== OPEN GRAPH ==================== -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://franndiaye3-stack.github.io/takkou-diakka/">
+  <meta property="og:site_name" content="Takkou Diakka">
   <meta property="og:title" content="Takkou Diakka — François NDIAYE &amp; Aissatou Bouna BA">
   <meta property="og:description" content="Invitation au mariage religieux du 10 octobre 2026 à 17h00 — Parcelles Assainies, Dakar.">
   <meta property="og:locale" content="fr_SN">
-    <meta property="og:url" content="https://franndiaye3-stack.github.io/takkou-diakka/">
-  <meta property="og:site_name" content="Takkou Diakka">
   <meta property="og:image" content="https://franndiaye3-stack.github.io/takkou-diakka/assets/images/og-image.jpg">
   <meta property="og:image:secure_url" content="https://franndiaye3-stack.github.io/takkou-diakka/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/jpeg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Takkou Diakka — François NDIAYE &amp; Aissatou Bouna BA">
+  <meta name="twitter:description" content="Invitation au mariage religieux du 10 octobre 2026 à 17h00 — Parcelles Assainies, Dakar.">
+  <meta name="twitter:image" content="https://franndiaye3-stack.github.io/takkou-diakka/assets/images/og-image.jpg">
 
   <!-- Favicon SVG inline -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E2F27'/%3E%3Cg fill='none' stroke='%23D4AF37' stroke-width='1.4'%3E%3Crect x='10' y='10' width='12' height='12'/%3E%3Crect x='10' y='10' width='12' height='12' transform='rotate(45 16 16)'/%3E%3C/g%3E%3C/svg%3E">
@@ -420,7 +423,7 @@
               </li>
             </ul>
 
-                        <!-- ---------- Carte de localisation ---------- -->
+            <!-- ---------- Carte de localisation ---------- -->
             <div class="map-wrap">
               <iframe
                 class="map-frame"
@@ -512,9 +515,6 @@
       </section>
 
       <!-- ======================================================
-           SHOOTING AVANT MARIAGE — Galerie horizontale premium
-           ====================================================== -->
-            <!-- ======================================================
            SHOOTING AVANT MARIAGE — Galerie horizontale
            ====================================================== -->
       <style>
@@ -893,87 +893,6 @@
         }, { threshold: 0.15 });
 
         starObserver.observe(coupleSection);
-      }
-
-      /* ---------- Galerie shooting — Lightbox ---------- */
-      const showcaseCards = document.querySelectorAll('.showcase__card');
-      if (showcaseCards.length > 0) {
-        const lightbox = document.createElement('div');
-        lightbox.className = 'lightbox';
-        lightbox.setAttribute('role', 'dialog');
-        lightbox.setAttribute('aria-modal', 'true');
-        lightbox.innerHTML =
-          '<button class="lightbox__close" aria-label="Fermer"></button>' +
-          '<button class="lightbox__nav lightbox__nav--prev" aria-label="Photo précédente"></button>' +
-          '<button class="lightbox__nav lightbox__nav--next" aria-label="Photo suivante"></button>' +
-          '<img class="lightbox__img" alt="">' +
-          '<div class="lightbox__counter"></div>';
-        document.body.appendChild(lightbox);
-
-        const lbImg = lightbox.querySelector('.lightbox__img');
-        const lbClose = lightbox.querySelector('.lightbox__close');
-        const lbPrev = lightbox.querySelector('.lightbox__nav--prev');
-        const lbNext = lightbox.querySelector('.lightbox__nav--next');
-        const lbCounter = lightbox.querySelector('.lightbox__counter');
-        const total = showcaseCards.length;
-        let currentIdx = 0;
-
-        function openLightbox(idx) {
-          currentIdx = idx;
-          const img = showcaseCards[idx].querySelector('img');
-          lbImg.src = img.src;
-          lbImg.alt = img.alt;
-          lbCounter.textContent = (idx + 1) + ' / ' + total;
-          lightbox.classList.add('is-open');
-          document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-          lightbox.classList.remove('is-open');
-          document.body.style.overflow = '';
-        }
-
-        function nextPhoto() {
-          currentIdx = (currentIdx + 1) % total;
-          openLightbox(currentIdx);
-        }
-
-        function prevPhoto() {
-          currentIdx = (currentIdx - 1 + total) % total;
-          openLightbox(currentIdx);
-        }
-
-        showcaseCards.forEach((card, idx) => {
-          card.addEventListener('click', () => openLightbox(idx));
-        });
-
-        lbClose.addEventListener('click', closeLightbox);
-        lbNext.addEventListener('click', (e) => { e.stopPropagation(); nextPhoto(); });
-        lbPrev.addEventListener('click', (e) => { e.stopPropagation(); prevPhoto(); });
-
-        lightbox.addEventListener('click', (e) => {
-          if (e.target === lightbox) closeLightbox();
-        });
-
-        document.addEventListener('keydown', (e) => {
-          if (!lightbox.classList.contains('is-open')) return;
-          if (e.key === 'Escape') closeLightbox();
-          if (e.key === 'ArrowRight') nextPhoto();
-          if (e.key === 'ArrowLeft') prevPhoto();
-        });
-
-        let lbTouchStart = 0;
-        lightbox.addEventListener('touchstart', (e) => {
-          lbTouchStart = e.touches[0].clientX;
-        }, { passive: true });
-
-        lightbox.addEventListener('touchend', (e) => {
-          const dx = e.changedTouches[0].clientX - lbTouchStart;
-          if (Math.abs(dx) > 50) {
-            if (dx < 0) nextPhoto();
-            else prevPhoto();
-          }
-        }, { passive: true });
       }
     })();
   </script>
